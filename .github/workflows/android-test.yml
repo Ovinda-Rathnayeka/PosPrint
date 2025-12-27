@@ -2,7 +2,7 @@ name: Test Build (No Play Store)
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main" , "test"]
   workflow_dispatch:
 
 jobs:
