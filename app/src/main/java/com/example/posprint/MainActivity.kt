@@ -19,6 +19,9 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
+
+// --- IMPORT ADDED BELOW (This fixes the error) ---
+import com.dantsu.escposprinter.connection.usb.UsbPrintersConnections
 import com.dantsu.escposprinter.EscPosPrinter
 import com.dantsu.escposprinter.connection.DeviceConnection
 import com.dantsu.escposprinter.connection.bluetooth.BluetoothConnection
@@ -42,7 +45,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var txtStatus: TextView
 
     // --- USB Permission Helper ---
-    private val ACTION_USB_PERMISSION = "com.example.displaydetails.USB_PERMISSION"
+    private val ACTION_USB_PERMISSION = "com.example.posprint.USB_PERMISSION" // UPDATED package name here too
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
