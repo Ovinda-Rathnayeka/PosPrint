@@ -283,6 +283,7 @@ class MainActivity : AppCompatActivity() {
         builder.show()
     }
 
+
     private fun savePrinterAddress(address: String) {
         getPreferences(Context.MODE_PRIVATE).edit().putString("saved_printer_mac", address).apply()
     }
